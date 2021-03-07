@@ -35,9 +35,10 @@ fun main() {
     // int[] arr = null ?????
     var data6 = emptyArray<Int>()
     data6.set(0,1)
-    data6.set(2,1)
-    data6.set(1,1)
+    data6.set(1,2)
+    data6.set(2,3)
 
-    // for (i in 0 until data6.size) println(data6.get(i))
+     for (i in 0 until data6.size)
+         println( data6.get(i))
 
 }

@@ -1,9 +1,8 @@
 /* object
  * 싱글톤 패턴 코드처럼 단일 객체로 선언하고 싶다면
  * 클래스 정의시 object 를 사용하면 됨
+ * 단일 객체로만 생성됨
  */
-
-// 단일 객체로만 생성됨
 object Person {
     var name : String = ""
     var age : Int = 0
@@ -13,6 +12,7 @@ object Person {
     }
 
 }
+
 
 /* companion object
  * 자바의 static 변수를 만들고 싶다면
@@ -24,7 +24,6 @@ object Person {
  * 클래스명.매소드명() 으로 매소드 호출이 가능
  * object 의 매소드 처럼 사용할 수 있다.
  */
-
 class Counter {
     companion object {
 
@@ -36,16 +35,16 @@ class Counter {
         var cnt = 0
         // 생성된 Counter 객체의 수를 저장하는 변수수
     }
-
 }
+
 
 /* data class
  * 자바의 VO 클래스를 만들고 싶다면
  * 클래스 정의시 data 를 사용하면 됨
  * 클래스 내부에 함수는 포함하면 안됨
  */
-
 data class Employee (var empno : String, var fname:String, var lname:String)
+
 
 /* 코틀린의 클래스 상속
  * 모든 클래스의 조상 클래스는 Any
@@ -54,7 +53,6 @@ data class Employee (var empno : String, var fname:String, var lname:String)
  * 자식 클래스가 상속받으려면 부모클래스에 open 이라고 선언 해야 함
  * 부모 클래스의 매서드를 재정의하려면 매소드에 open 이라고 선언 해야 함
  */
-
 open class Parent() {
     var name : String = "parents"
     open fun sayHello() {

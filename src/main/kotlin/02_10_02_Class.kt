@@ -1,9 +1,7 @@
 import kotlin.math.round
 
 /* 코틀린 클래스
- *
  * 클래스의 객체생성시 new 연산자는 사용하지 않음
- *
  */
 
 class Person1 {
